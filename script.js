@@ -38,6 +38,8 @@ app
     } 
     $scope.$apply();
     console.log($scope.users);
+    //Send button click to Google Analytics
+    ga('send', 'event', 'userlist', 'Click', 'userlist');
   };
   ParseSvc.getUsers($scope.sucessCallback);
 }])
@@ -45,6 +47,7 @@ app
 
 //code to print text
 .controller('print', ['$scope','ParseSvc', function($scope, ParseSvc){
+  var print
 }])
 
 
